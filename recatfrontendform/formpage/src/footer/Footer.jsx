@@ -86,9 +86,9 @@ console.log(currentYear,currentDate);
 
           {/* hidden lg: */}
           {/* <div className="flex flex-col  justify-center"> */}
-  <div className="flex flex-col md:flex-row justify-center r space-y-8 md:space-y-0 md:space-x-1 max-w-6xl w-full mx-auto p-4">
+  <div className="flex flex-col md:flex-row justify-center r space-y-8 md:space-y-0 md:space-x-1 max-w-6xl w-full mx-auto p-10 ">
   {/* Contact info */}
-  <div className="text-center md:text-left md:mb-24 mb-8  text-lg font-semibold w-full md:w-1/3">
+  <div className="text-center md:text-left md:mb-4 mb-  text-lg font-semibold w-full md:w-1/3">
     <h1>M/s BISJHINTUS PRIVATE LIMITED</h1>
     <br />
     <h1>CIN: U80904TR2021PTC013885</h1>
