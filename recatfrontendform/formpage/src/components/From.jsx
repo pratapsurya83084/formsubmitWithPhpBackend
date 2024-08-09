@@ -73,16 +73,48 @@ const Form = () => {
   return (
     <div className="container mx-auto px-4 py-20 mb-20">
       <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold mb-20 md:mb-20 text-center">
-        Your Success Story Starts begins With bisjhintus
+        Your Success Story Starts Begins With BISJHINTUS Group
       </h2>
 
+      {/* date and course name yet to be add */}
       <form onSubmit={handleSubmit}
       action=''
       method='POST'
-      className="max-w-lg mx-auto bg-blue-500 p-8 rounded-lg shadow-md">
+      className="max-w-lg mx-auto bg-[#009bb5] p-8 rounded-lg shadow-md">
+        {/* your course opting*/}
+        <div className="mb-6">
+          <label htmlFor="course" className="block text-white font-bold mb-2">
+          Your Course Opting
+          </label>
+          <input
+            id="course"
+            type="text"
+            className="w-full p-3 border border-gray-300 rounded"
+            placeholder="which course you are opting"
+            value={formData.course}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        {/* add input date  */}
+        <div className="mb-6">
+          <label htmlFor="date" className="block text-white font-bold mb-2">
+          Your Course Opting date
+          </label>
+          <input
+            id="date"
+            type="date"
+            className="w-full p-3 border border-gray-300 rounded"
+            placeholder="enter date"
+            value={formData.date}
+            onChange={handleChange}
+            required
+          />
+        </div>
         {/* Full Name */}
         <div className="mb-6">
-          <label htmlFor="username" className="block text-gray-700 font-bold mb-2">
+          <label htmlFor="username" className="block text-white font-bold mb-2">
             Your Full Name
           </label>
           <input
@@ -98,7 +130,7 @@ const Form = () => {
 
         {/* Email */}
         <div className="mb-6">
-          <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
+          <label htmlFor="email" className="block text-white font-bold mb-2">
             Your Email
           </label>
           <input
@@ -114,17 +146,18 @@ const Form = () => {
 
         {/* Phone Number */}
         <div className="mb-6">
-          <label htmlFor="contact_no" className="block text-gray-700 font-bold mb-2">
+          <label htmlFor="contact_no" className="block text-white font-bold mb-2">
             Your Phone Number
           </label>
           <input
             id="contact_no"
-            type="text"
+            type="tel"
             className="w-full p-3 border border-gray-300 rounded"
             placeholder="Enter your phone number"
             value={formData.contact_no}
             onChange={handleChange}
             pattern="\d{10}"
+            inputMode="numeric"
             title="Phone number must be 10 digits"
             required
           />
@@ -132,7 +165,7 @@ const Form = () => {
 
         {/* Country */}
         <div className="mb-6">
-          <label htmlFor="country" className="block text-gray-700 font-bold mb-2">
+          <label htmlFor="country" className="block text-white font-bold mb-2">
             Your Country
           </label>
           <input
@@ -148,7 +181,7 @@ const Form = () => {
 
         {/* Job Role */}
         <div className="mb-6">
-          <label htmlFor="jobrole" className="block text-gray-700 font-bold mb-2">
+          <label htmlFor="jobrole" className="block text-white font-bold mb-2">
             Your Job Role
           </label>
           <input
@@ -164,13 +197,14 @@ const Form = () => {
 
         {/* Submit Button */}
         <div className="text-center">
-          <Link to="/submit/success"></Link>
+          {/* <Link to="/submit/success"></Link> */}
           <button
           // onClick={submitsuccess}
             type="submit"
-            className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-4 rounded"
+            className="w-  text-xl bg-white  text-blue-500 font-bold py-3 
+            px-8 rounded"
           >
-            Submit
+            ACT NOW
           </button>
         </div>
       </form>
