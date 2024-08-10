@@ -61,9 +61,9 @@ console.log(currentYear,currentDate);
             <div className=" xl:flex">
               <a href="https://bisjhintus.com/" className="mb-4 ">
                 <img
-                  src="https://bisjhintus.com/assets/images/logo-full.png"
+                  src="\logo.png"
                   alt="BISJHINTUS Logo"
-                  className="w-48 "
+                  className=" h-15 mt-5 "
                 />
               </a>
               {/* logo of vowlink */}

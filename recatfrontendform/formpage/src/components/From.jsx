@@ -1,8 +1,4 @@
 
-
-
-
-
 import React, { useState } from 'react';
 import { useNavigate ,Link } from 'react-router-dom';
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -70,9 +66,10 @@ const Form = () => {
       console.error('Error submitting form:', error);
     }
   };
+
   return (
-    <div className="container mx-auto px-4 py-20 mb-20">
-      <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold mb-20 md:mb-20 text-center">
+    <div className="container mx-auto px-4 py-10 md:py-20 mb-20">
+      <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold mb-5 sm:mb-20 md:mb-20 text-center">
         Your Success Story Starts Begins With BISJHINTUS Group
       </h2>
 
@@ -84,13 +81,14 @@ const Form = () => {
         {/* your course opting*/}
         <div className="mb-6">
           <label htmlFor="course" className="block text-white font-bold mb-2">
-          Your Course Opting
+          {/* Your Course Opting */}
+          Your Desired Course
           </label>
           <input
             id="course"
             type="text"
             className="w-full p-3 border border-gray-300 rounded"
-            placeholder="which course you are opting"
+            placeholder="Course You Are Signing Up For"
             value={formData.course}
             onChange={handleChange}
             required
@@ -100,7 +98,7 @@ const Form = () => {
         {/* add input date  */}
         <div className="mb-6">
           <label htmlFor="date" className="block text-white font-bold mb-2">
-          Your Course Opting date
+          Course Journey Begins With Us
           </label>
           <input
             id="date"
@@ -201,8 +199,11 @@ const Form = () => {
           <button
           // onClick={submitsuccess}
             type="submit"
-            className="w-  text-xl bg-white  text-blue-500 font-bold py-3 
-            px-8 rounded"
+            className="w-  text-xl bg-[#009bb5] border  text-white 
+            shadow-xl  
+            
+            font-bold py-3 
+            px-10 rounded"
           >
             ACT NOW
           </button>
